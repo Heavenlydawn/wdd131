@@ -72,7 +72,7 @@ nav ul li a:hover {
 */
 
 main {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   display: grid;
@@ -162,7 +162,7 @@ footer {
   text-align: center;
 }
 
-footer h3 {
+footer h2 {
   font-size: 2rem;
 }
 footer p {
