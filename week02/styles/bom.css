@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 :root {
   --primary-color: #ede9e3;
   --secondary-color: #e7d7c9;
@@ -14,62 +13,35 @@
   --accent3-color: #a38f85;
   --text-font: "Roboto", sans-serif;
 }
-
 body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: var(--text-font);
-  background-color: var(--primary-color);
+  font-family: Acme, Arial, sans-serif;
 }
 
 h1 {
   font-size: 1.5rem;
-  color: var(--accent1-color);
 }
 
 main {
-  width: 90%;
   margin: 1rem auto;
   border: 1px solid rgb(0 0 0 / 0.1);
-  padding: 3rem 2rem;
-  background-color: var(--secondary-color);
+  padding: 1rem;
+  background-color: #ddd;
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 input,
 button {
-  padding: 1rem;
-  border: 1px solid var(--accent2-color);
-  border-radius: 4px;
-  transition: border-color 0.3s, transform 0.3s;
-}
-
-input:focus,
-button:hover {
-  border-color: var(--accent1-color);
+  padding: 0.5rem;
 }
 
 button {
-  margin: 1rem 0;
-  font-size: 1rem;
-  background-color: var(--accent1-color);
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-button:hover {
-  background-color: var(--accent2-color);
-}
-label {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  margin: 0.5rem;
 }
 
 .delete {
@@ -94,28 +66,14 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
-  background-color: var(--accent3-color);
-  border-radius: 4px;
-  margin-bottom: 0.5rem;
-  transition: transform 0.3s;
-  font-size: 1.2rem;
 }
 
-li:hover {
-  transform: scale(1.02);
-}
-
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 32.5em) {
   h1 {
     font-size: 2rem;
   }
 
   main {
-    width: 700px;
-  }
-  input,
-  button {
-    padding: 1.3rem;
+    width: 320px;
   }
 }
