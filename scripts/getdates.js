@@ -1,5 +1,5 @@
 const currentYear = new Date().getFullYear();
-document.querySelector("footer h3").innerText = `© 🤎 Ozioma Heaven Gabriel 🤎 Abuja ${currentYear}`;
+document.querySelector("footer h2").innerText = `© 🤎 Ozioma Heaven Gabriel 🤎 Abuja ${currentYear}`;
 
 
 const lastModified = document.lastModified;
