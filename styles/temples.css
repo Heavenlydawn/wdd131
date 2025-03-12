@@ -110,7 +110,7 @@ Main Section
 main {
   background: var(--primary-color);
 }
-main h1 {
+main h2 {
   font-size: 2rem;
   padding: 20px;
   text-align: center;

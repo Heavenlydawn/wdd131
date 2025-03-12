@@ -28,9 +28,6 @@
     display: none;
   }
 
-  main h1 {
-    font-size: 2.5rem;
-  }
   .temple__card {
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     padding: 0 50px;
@@ -40,6 +37,9 @@
   main {
     max-width: 1200px;
     margin: 2rem auto;
+  }
+  main h2 {
+    font-size: 2.5rem;
   }
 
   footer h2 {
