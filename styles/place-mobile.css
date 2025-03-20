@@ -1,8 +1,8 @@
 :root {
   --primary-color: #ffffff;
-  --secondary-color: #008751;
+  --secondary-color: #085531;
   --accent-color: #e8e8e8;
-  --text-color: #333;
+  --text-color: #000000; 
   --heading-font: "Raleway", sans-serif;
   --body-font: "Inter", sans-serif;
 }
@@ -64,8 +64,7 @@ main h2 {
   margin-bottom: 10px;
   background: var(--secondary-color);
   padding: 1rem;
-  color:#fff;
-
+  color: #ffffff; 
 }
 
 .data ul {
@@ -94,7 +93,10 @@ footer {
   padding: 2rem;
   line-height: 30px;
 }
-
+footer span {
+  color: #ffffff; 
+  font-weight: bold;
+}
 /* Animation */
 @keyframes fadeIn {
   from {

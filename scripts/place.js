@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       windChillElem.textContent = "N/A";
     }
   
-    // Footer date info
+    // Footer
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("lastModified").textContent = document.lastModified;
   });
