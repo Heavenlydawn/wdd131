@@ -78,7 +78,8 @@ main h2 {
 
 .mobile-icon {
   display: block;
-  /* width: 48px; */
+  width: 48px;
+  margin: 0 auto 1rem;
 }
 
 .weather-icon {
