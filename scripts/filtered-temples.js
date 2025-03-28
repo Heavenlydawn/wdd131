@@ -167,7 +167,7 @@ document.querySelector("#small").addEventListener("click", () => {
 });
 
 document.querySelector("#home").addEventListener("click", () => {
-  displayTemples(() => true); // Display all temples
+  displayTemples(() => true);
 });
 
 // Initial display of all temples
