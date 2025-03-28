@@ -20,6 +20,12 @@ body {
     background-color: #f4f4f4;
     text-align: center;
 }
+
+.acme{
+    width: 100%;
+    text-align: center;
+    border: 2px solid red;
+}
 table {
     width: 70vw;
     margin: 20px auto;
