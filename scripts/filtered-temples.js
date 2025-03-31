@@ -116,7 +116,7 @@ function displayTemples(filterFn) {
     card.classList.add("temple-card");
 
     // Temple Name
-    const templeName = document.createElement("h2");
+    const templeName = document.createElement("h3");
     templeName.textContent = temple.templeName;
 
     // Location

@@ -38,13 +38,13 @@
     max-width: 1400px;
     margin: 2rem auto;
   }
-  main h1 {
+  main h2 {
     margin: 1rem 0;
     padding: 2rem 0;
     font-size: 2.5rem;
   }
 
-  main h2 {
+  main h3 {
     text-align: left;
     margin-bottom: 1rem;
   }
