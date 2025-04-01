@@ -1,0 +1,91 @@
+:root {
+  --primary-color: #ede9e3;
+  --secondary-color: #e7d7c9;
+  --accent1-color: #3a2d28;
+  --accent2-color: #cdc6c3;
+  --accent3-color: #a38f85;
+  --heading-font: "Raleway", sans-serif;
+  --text-font: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+body {
+  font-family: var(--text-font);
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  font-family: var(--heading-font);
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+section {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+}
+.wireframe {
+  border: 1px solid var(--accent2-color);
+  padding: 1rem;
+  margin: 1rem auto;
+}
+.wireframe .wireframe-desktop {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.wireframe .wireframe-mobile {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 1.5rem;
+  }
+
+  header {
+    padding: 1.5rem;
+  }
+  .wireframe .wireframe-mobile {
+    flex-direction: column;
+  }
+}
