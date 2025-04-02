@@ -6,8 +6,10 @@
     <meta name="author" content="Heaven Gabriel">
     <meta name="description" content="WDD 131 Heaven Gabriel's Temple Page">
     <title>WDD 131 - Dynamic Web Fundamentals - Heaven Gabriel</title>
-    <link rel="stylesheet" href="styles/filtered-temples.css">
-    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preload" href="styles/filtered-temples-large.css" as="style">
+    <link rel="preload" href="styles/filtered-temples.css" as="style">
+    <link rel="stylesheet" href="styles/filtered-temples.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="print" onload="this.media='all'">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
