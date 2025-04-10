@@ -42,10 +42,8 @@ nav {
   align-items: center;
 }
 
-nav h1 {
-  font-family: var(--heading-font);
-  font-size: 1.8rem;
-  color: var(--accent1-color);
+nav h1 img{
+ width: 200px;
 }
 
 nav ul {
