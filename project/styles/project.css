@@ -42,7 +42,7 @@ nav {
   align-items: center;
 }
 
-nav h1 img{
+nav img{
  width: 200px;
 }
 
@@ -165,6 +165,9 @@ footer {
   padding: 1rem;
   background-color: var(--accent2-color);
   margin-top: 2rem;
+}
+footer a{
+  color: var(--accent1-color);
 }
 
 /* ADD TO CART */

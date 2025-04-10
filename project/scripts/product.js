@@ -64,7 +64,6 @@ const products = [
 function addToCart(product, button) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
- 
   const existing = cart.find(item => item.id === product.id);
   if (existing) {
     existing.quantity += 1;
@@ -72,16 +71,16 @@ function addToCart(product, button) {
     cart.push({ ...product, quantity: 1 });
   }
 
-  // Save updated cart back to localStorage
+  // Update localStorage
   localStorage.setItem("cart", JSON.stringify(cart));
 
-  // Update the button counter badge
   const counter = button.querySelector('.cart-count');
   if (counter) {
     let currentCount = parseInt(counter.textContent, 10) || 0;
     counter.textContent = currentCount + 1;
   }
 }
+
 
 function displayProducts() {
   const grid = document.getElementById("productGrid");
@@ -94,12 +93,13 @@ function displayProducts() {
       <img src="${product.image}" alt="${product.name}" loading="lazy"/>
       <h3>${product.name}</h3>
       <p>${product.description}</p>
-      <span class="price">₦${product.price.toLocaleString()}</span>
+      <span class="price">${product.price}</span>
       <button class="add-btn">
         Add to Cart <span class="cart-count">0</span>
       </button>
     `;
 
+    // Get the button element from the current card
     const btn = card.querySelector(".add-btn");
     btn.addEventListener("click", () => addToCart(product, btn));
 
