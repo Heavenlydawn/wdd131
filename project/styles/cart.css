@@ -1,0 +1,88 @@
+/* Cart Items Container */
+.cart-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Individual Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--accent2-color);
+  padding: 1em 0;
+}
+
+.cart-item img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.item-details {
+  flex: 1;
+  margin-left: 1em;
+}
+
+.item-details h4 {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+}
+
+.item-details p {
+  margin: 0.2em 0;
+  font-size: 0.95rem;
+}
+
+/* Remove button in cart items */
+.remove-btn {
+  background-color: var(--accent1-color);
+  border: none;
+  color: var(--primary-color);
+  padding: 0.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: var(--accent3-color);
+}
+
+/* Cart Summary Section */
+.cart-summary {
+  margin-top: 2em;
+  text-align: right;
+  padding-right: 1em;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart-summary h3 {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: 1.3rem;
+  color: var(--accent1-color);
+}
+
+/* Checkout Button in Summary */
+.cart-summary button {
+  background-color: var(--accent1-color);
+  border: none;
+  color: var(--primary-color);
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 1rem;
+  margin-top: 1em;
+}
+
+.cart-summary button:hover {
+  background-color: var(--accent3-color);
+}

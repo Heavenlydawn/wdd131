@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tools | Heaven's Skincare</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/tools.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Heaven's Skincare</h1>
+      <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="guide.html">Skincare Guide</a></li>
+        <li><a href="tools.html" class="active">Tools</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section with Slideshow -->
+    <section class="tools-hero">
+      <div class="slideshow">
+        <img src="images/tools1.webp" alt="Facial roller" class="slide active">
+        <img src="images/tools2.webp" alt="Gua sha" class="slide">
+        <img src="images/tools3.webp" alt="Cleansing brush" class="slide">
+        <img src="images/tools4.webp" alt="LED mask" class="slide">
+        <img src="images/tools5.webp" alt="LED mask" class="slide">
+        <img src="images/tools6.webp" alt="LED mask" class="slide">
+        <div class="overlay">
+          <h2>Essential Skincare Tools</h2>
+          <p>Enhance your skincare with the right tools for your skin type</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Info -->
+    <section class="tools-info">
+      <h2>Our Top Recommended Tools</h2>
+ <div class="tools">
+    <div class="tool">
+        <h3>Jade Roller</h3>
+        <p>Promotes lymphatic drainage and boosts circulation for a healthy glow.</p>
+      </div>
+      <div class="tool">
+        <h3>Gua Sha Stone</h3>
+        <p>Relieves tension, improves blood flow, and enhances product absorption.</p>
+      </div>
+      <div class="tool">
+        <h3>Cleansing Brush</h3>
+        <p>Deeply cleanses pores, removing impurities and dead skin cells.</p>
+      </div>
+      <div class="tool">
+        <h3>LED Therapy Mask</h3>
+        <p>Uses light technology to target acne, wrinkles, and pigmentation.</p>
+      </div>
+ </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Heaven’s Skincare | <a href="references.html">References</a></p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const slides = document.querySelectorAll('.slide');
+      let index = 0;
+  
+      function showSlides() {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active');
+          if (i === index) {
+            slide.classList.add('active');
+          }
+        });
+  
+        index = (index + 1) % slides.length;
+      }
+  
+      showSlides(); 
+      setInterval(showSlides, 2000); 
+    });
+  </script>
+  
+</body>
+</html>

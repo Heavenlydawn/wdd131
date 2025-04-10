@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart | Heaven's Skincare</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/cart.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="scripts/cart.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+        <h1><img src="images/hs-logo.png" alt=""></h1>
+      <ul>
+        <li><a href="project.html">Home</a></li>
+        <li><a href="guide.html">Skincare Guide</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="product.html">Products</a></li>
+        <li><a href="cart.html" class="active">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main>
+    <section class="cart">
+      <h2>Your Shopping Cart</h2>
+      <div id="cartItems" class="cart-items">
+      </div>
+
+      <div class="cart-summary">
+        <h3>Total: ₦<span id="cartTotal">0</span></h3>
+        <button id="checkoutBtn">Checkout</button>
+        <button id="clearCartBtn">Clear Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Heaven’s Skincare | <a href="references.html">References</a></p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

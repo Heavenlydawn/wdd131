@@ -1,0 +1,64 @@
+.guide-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .guide-section h2 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--accent1-color);
+  }
+  
+  .guide-section p,
+  .guide-section ul {
+    font-size: 1rem;
+    color: var(--accent1-color);
+    line-height: 1.6;
+  }
+  
+  .guide-section.intro {
+    text-align: center;
+  }
+  
+  .routines .routine {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--accent2-color);
+  }
+  
+  .routines .routine h3 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: var(--accent3-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .ingredients ul {
+    list-style: disc inside;
+    margin-top: 1rem;
+  }
+  
+  .ingredients ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    .guide-section {
+      padding: 1rem;
+      margin: 1rem;
+    }
+  
+    .guide-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .routines .routine h3 {
+      font-size: 1.3rem;
+    }
+  }
+  
